@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <nav class="flex">
+      <a href="#">
+        <h1>The Hyper Progame</h1>
+      </a>
+      <div class="container">
+        <form action="" onsubmit="location.hash = '#/' + this.s.value; return false;" class="search-bar">
+          <button type="submit"><img src="./src/assets/search.svg" alt="" id="search-icon"></button>
+          <input type="text" placeholder="Find a game" id="input_search" name="s">
+        </form>
+      </div>
+    </nav>
+    <main id="pageContent">
+    </main>
+    <footer>
+      <div></div>
+      <p>Dylan DORÉ @ 2023 - Fictionnal website for exercice</p>
+    </footer>
+    <script type="module" src="src/index.js"></script>
+  </body>
+</html>

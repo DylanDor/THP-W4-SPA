@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@import 'reset.scss';
+@import 'config.scss';
+@import 'components.scss';
+@import 'pageDetail.scss';
+
+*{
+  font-family: $font;
+  font-weight: $regular;
+  color: $white;
+}
+
+body {
+  margin: $m-50;
+  background-color: $black;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: $bold;
+  color: $red;
+  font-size: 48px;
+}
+
+h2 {
+  font-weight: $bold;
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-weight: $bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.s-btwn{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bold{
+  font-weight: $bold;
+}
+
+.articles {
+  display: grid;
+  grid-gap: $small;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+footer div {
+  background-color: $red;
+  width: 140px;
+  height: 10px;
+  margin-bottom: $small;
+}
